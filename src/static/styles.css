@@ -76,24 +76,39 @@ section h3 {
 
 .activity-card ul {
   margin-top: 10px;
-  padding-left: 20px;
-  list-style-type: disc;
-  background-color: #f1f1f1;
+  padding: 10px;
+  list-style-type: none;
+  background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 5px;
-  padding: 10px;
+  max-height: 150px;
+  overflow-y: auto;
 }
 
 .activity-card ul li {
-  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #eee;
   font-size: 14px;
   color: #333;
-  padding: 5px;
-  border-bottom: 1px solid #ddd;
 }
 
 .activity-card ul li:last-child {
   border-bottom: none;
+}
+
+.activity-card ul li span {
+  font-weight: bold;
+  color: #1a237e;
+}
+
+.activity-card ul li .email {
+  font-size: 12px;
+  color: #666;
+  margin-left: 10px;
+  word-break: break-word;
 }
 
 .form-group {
